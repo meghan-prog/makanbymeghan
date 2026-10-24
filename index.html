@@ -557,13 +557,10 @@ h1.hero-headline{
 /* Two generations of the same food story */
 .about-photo-wrap{
   position:relative;
-  display:grid;
-  grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);
-  align-items:center;
-  gap:14px;
+  display:block;
   width:100%;
   max-width:480px;
-  height:auto;
+  aspect-ratio:.51;
   justify-self:end;
   isolation:isolate;
 }
@@ -580,11 +577,11 @@ h1.hero-headline{
   z-index:-1;
 }
 .about-present-frame{
-  position:relative;
-  top:auto;
-  right:auto;
+  position:absolute;
+  top:0;
+  right:0;
   z-index:1;
-  width:100%;
+  width:88%;
   box-sizing:border-box;
   padding:9px 9px 30px;
   background:#E8DCC5;
@@ -609,17 +606,17 @@ h1.hero-headline{
   letter-spacing:.18em;
 }
 .about-memory-card{
-  position:relative;
-  left:auto;
-  bottom:auto;
+  position:absolute;
+  top:57%;
+  left:0;
   z-index:2;
-  width:100%;
+  width:94%;
   box-sizing:border-box;
   padding:9px 9px 13px;
   background:#F3E9D7;
   border:1px solid rgba(199,166,106,.8);
   box-shadow:0 18px 38px rgba(0,0,0,.32);
-  transform:none;
+  transform:rotate(-2deg);
 }
 .about-memory-card img{
   display:block;
@@ -640,17 +637,16 @@ h1.hero-headline{
   .about-inner{grid-template-columns:1fr;gap:38px}
   .about-copy{max-width:680px}
   .about-title{font-size:clamp(38px,8vw,52px);margin-bottom:21px}
-  .about-photo-wrap{width:min(100%,410px);height:auto;justify-self:center;gap:12px}
+  .about-photo-wrap{width:min(100%,410px);justify-self:center}
   .about-photo-wrap:before{right:-10px;top:-10px}
 }
 @media(max-width:420px){
   .about-section{padding:48px 18px 54px}
   .about-inner{gap:31px}
   .about-text{font-size:14px;line-height:1.75}
-  .about-photo-wrap{height:auto;gap:9px}
-  .about-present-frame{width:100%;right:auto;padding:7px 7px 26px}
+  .about-present-frame{padding:7px 7px 26px}
   .about-present-frame:after{right:10px;bottom:8px;font-size:7px}
-  .about-memory-card{width:100%;left:auto;bottom:auto;padding:7px 7px 11px}
+  .about-memory-card{padding:7px 7px 11px}
   .about-memory-caption{font-size:15px;margin-top:8px}
 }
 @media(prefers-reduced-motion:reduce){.about-button{transition:none}}
