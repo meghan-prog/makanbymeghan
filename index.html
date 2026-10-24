@@ -557,9 +557,13 @@ h1.hero-headline{
 /* Two generations of the same food story */
 .about-photo-wrap{
   position:relative;
+  display:grid;
+  grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);
+  align-items:center;
+  gap:14px;
   width:100%;
-  max-width:420px;
-  height:510px;
+  max-width:480px;
+  height:auto;
   justify-self:end;
   isolation:isolate;
 }
@@ -576,11 +580,12 @@ h1.hero-headline{
   z-index:-1;
 }
 .about-present-frame{
-  position:absolute;
-  top:0;
-  right:6px;
+  position:relative;
+  top:auto;
+  right:auto;
   z-index:1;
-  width:74%;
+  width:100%;
+  box-sizing:border-box;
   padding:9px 9px 30px;
   background:#E8DCC5;
   border:1px solid rgba(199,166,106,.72);
@@ -604,16 +609,17 @@ h1.hero-headline{
   letter-spacing:.18em;
 }
 .about-memory-card{
-  position:absolute;
-  left:-2%;
-  bottom:12px;
+  position:relative;
+  left:auto;
+  bottom:auto;
   z-index:2;
-  width:76%;
+  width:100%;
+  box-sizing:border-box;
   padding:9px 9px 13px;
   background:#F3E9D7;
   border:1px solid rgba(199,166,106,.8);
   box-shadow:0 18px 38px rgba(0,0,0,.32);
-  transform:rotate(-2.4deg);
+  transform:none;
 }
 .about-memory-card img{
   display:block;
@@ -634,17 +640,17 @@ h1.hero-headline{
   .about-inner{grid-template-columns:1fr;gap:38px}
   .about-copy{max-width:680px}
   .about-title{font-size:clamp(38px,8vw,52px);margin-bottom:21px}
-  .about-photo-wrap{width:min(100%,410px);height:490px;justify-self:center}
+  .about-photo-wrap{width:min(100%,410px);height:auto;justify-self:center;gap:12px}
   .about-photo-wrap:before{right:-10px;top:-10px}
 }
 @media(max-width:420px){
   .about-section{padding:48px 18px 54px}
   .about-inner{gap:31px}
   .about-text{font-size:14px;line-height:1.75}
-  .about-photo-wrap{height:410px}
-  .about-present-frame{width:74%;right:4px;padding:7px 7px 26px}
+  .about-photo-wrap{height:auto;gap:9px}
+  .about-present-frame{width:100%;right:auto;padding:7px 7px 26px}
   .about-present-frame:after{right:10px;bottom:8px;font-size:7px}
-  .about-memory-card{width:79%;left:-1%;bottom:5px;padding:7px 7px 11px}
+  .about-memory-card{width:100%;left:auto;bottom:auto;padding:7px 7px 11px}
   .about-memory-caption{font-size:15px;margin-top:8px}
 }
 @media(prefers-reduced-motion:reduce){.about-button{transition:none}}
