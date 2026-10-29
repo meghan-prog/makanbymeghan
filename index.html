@@ -5,7 +5,7 @@
 <style>
 :root{--green:#0F2F24;--green-deep:#08271E;--cream:#F3E9D7;--gold:#C7A66A;}
 *{box-sizing:border-box}html,body{margin:0;background:var(--green);color:var(--cream);font-family:Georgia,'Times New Roman',serif}
-.hero{position:relative;min-height:680px;overflow:hidden;background:linear-gradient(180deg,var(--green) 0%,var(--green-deep) 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:46px 0 0}
+.hero{position:relative;min-height:620px;overflow:hidden;background:linear-gradient(180deg,var(--green) 0%,var(--green-deep) 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:46px 0 0}
 .brand{z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 20px 8px}
 .brand img{width:min(300px,65vw);height:auto;display:block;filter:drop-shadow(0 8px 18px rgba(0,0,0,.12))}
 h1{font-weight:400;font-size:clamp(28px,4.2vw,54px);line-height:1.12;letter-spacing:-.025em;margin:18px 0 10px;color:var(--cream)}
@@ -17,7 +17,7 @@ h1 em{font-weight:400;color:var(--gold)}
 .tile{width:clamp(230px,29vw,390px);height:clamp(175px,22vw,280px);flex:0 0 auto;border-radius:5px;overflow:hidden;border:1px solid rgba(199,166,106,.35);box-shadow:0 14px 32px rgba(0,0,0,.22)}
 .tile img{width:100%;height:100%;object-fit:cover;display:block}
 @keyframes slide{from{transform:translateX(0)}to{transform:translateX(var(--marquee-shift,-50%))}}
-@media(max-width:600px){.hero{min-height:600px;padding-top:34px}.brand img{width:min(240px,62vw)}.tile{width:72vw;height:190px}.track{animation-duration:28s;animation-delay:-4s}}
+@media(max-width:600px){.hero{min-height:540px;padding-top:34px}.brand img{width:min(240px,62vw)}.tile{width:72vw;height:190px}.track{animation-duration:28s;animation-delay:-4s}}
 @media(prefers-reduced-motion:reduce){.track{animation:none}}
 
 /* Editorial headline treatment: typography is the visual feature */
@@ -189,7 +189,7 @@ h1.hero-headline{
 .intro-section{
   background:var(--green-deep);
   color:var(--cream);
-  padding:clamp(30px,4vw,48px) 24px clamp(38px,4.4vw,54px);
+  padding:clamp(16px,2vw,24px) 24px clamp(38px,4.4vw,54px);
 }
 .intro-inner{
   width:min(100%,1180px);
@@ -264,7 +264,7 @@ h1.hero-headline{
   outline-offset:4px;
 }
 @media(max-width:700px){
-  .intro-section{padding:28px 20px 36px}
+  .intro-section{padding:16px 20px 36px}
   .intro-eyebrow{font-size:9px;margin-bottom:10px}
   .intro-copy{
     font-size:16px;
@@ -877,7 +877,7 @@ html{scroll-behavior:smooth}
 .pricing-unit{margin:9px 0 0;color:#E5D9C7;font:400 12px/1.4 Arial,"Helvetica Neue",sans-serif}
 .pricing-card.is-featured .pricing-unit{color:#756A5A}
 .pricing-description{
-  min-height:78px;margin:28px 0 22px;color:#E5D9C7;
+  min-height:62px;margin:22px 0 10px;color:#E5D9C7;
   font:400 13.5px/1.75 Arial,"Helvetica Neue",sans-serif;
 }
 .pricing-card.is-featured .pricing-description{color:#655E53}
@@ -956,7 +956,7 @@ html{scroll-behavior:smooth}
   .pricing-grid{gap:12px}
   .pricing-card{padding:25px 19px 22px}
   .pricing-plan-name{font-size:26px}
-  .pricing-description{min-height:95px;font-size:13px}
+  .pricing-description{min-height:78px;font-size:13px}
   .pricing-features li{font-size:12px}
 }
 @media(max-width:700px){
@@ -967,7 +967,7 @@ html{scroll-behavior:smooth}
   .pricing-card,.pricing-card.is-featured{padding:25px 23px 22px;transform:none}
   .pricing-plan-name{font-size:28px}
   .pricing-price{font-size:49px}
-  .pricing-description{min-height:0;margin:20px 0 16px}
+  .pricing-description{min-height:0;margin:20px 0 8px}
   .pricing-features{margin-bottom:21px}
   .pricing-footnote{font-size:11px;text-align:left;margin-top:23px}
 }
@@ -1194,7 +1194,7 @@ html{scroll-behavior:smooth}
 <article class="how-step">
 <div class="how-step-top"><span class="how-number">06</span><span aria-hidden="true" class="how-emoji"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2v20M3.34 7l17.32 10M3.34 17 20.66 7M12 2l-2 2M12 2l2 2M12 22l-2-2M12 22l2-2M3.34 7l.5 2.7M3.34 7l2.8-.3M20.66 17l-.5-2.7M20.66 17l-2.8.3M3.34 17l2.8.3M3.34 17l.5-2.7M20.66 7l-2.8-.3M20.66 7l-.5 2.7"></path></svg></span></div>
 <h3>Enjoy food that fits your family</h3>
-<p>From fresh Reels to Meals to freezer-ready family favourites and Indonesian dishes, enjoy more ease at mealtimes.</p>
+<p>Enjoy Reel-inspired meals, freezer favourites and Indonesian dishes.</p>
 </article>
 </div>
 <p class="how-footnote">A typical session takes around <strong>3 to 4 hours</strong>, including cooking and clean-up. Ingredients and suitable storage containers are arranged separately.</p>
@@ -1218,7 +1218,6 @@ html{scroll-behavior:smooth}
 <ul class="pricing-features">
 <li>One cooking session every week</li>
 <li>Five recipes chosen together</li>
-<li>20 filled tuppers · 40 portions</li>
 <li>Personalised shopping list</li>
 <li>Portioned for fridge or freezer</li>
 <li>Kitchen cleaned after cooking</li>
@@ -1234,7 +1233,6 @@ html{scroll-behavior:smooth}
 <ul class="pricing-features">
 <li>One cooking session every two weeks</li>
 <li>Five recipes chosen together</li>
-<li>20 filled tuppers · 40 portions</li>
 <li>Personalised shopping list</li>
 <li>Portioned for fridge or freezer</li>
 <li>Kitchen cleaned after cooking</li>
@@ -1250,7 +1248,6 @@ html{scroll-behavior:smooth}
 <ul class="pricing-features">
 <li>Book a session when you need one</li>
 <li>Five recipes chosen together</li>
-<li>20 filled tuppers · 40 portions</li>
 <li>Personalised shopping list</li>
 <li>Portioned for fridge or freezer</li>
 <li>Kitchen cleaned after cooking</li>
@@ -1279,7 +1276,7 @@ html{scroll-behavior:smooth}
 </div>
 <p class="pricing-addons-note">Optional extras are priced separately.</p>
 </div>
-<p class="pricing-footnote">All prices are per session. The core session includes five agreed recipes and 20 filled tuppers containing 40 portions in total. Ingredients and suitable storage containers are not included. Grocery spend depends on your chosen recipes; allow around €100 to €150 as an initial estimate. We’ll discuss what keeps best in the fridge or freezer before cooking.</p>
+<p class="pricing-footnote">All prices are per session. Ingredients and suitable storage containers are not included. Grocery spend varies by menu; allow around €100 to €150 as an initial estimate. We’ll agree which dishes suit the fridge or freezer before cooking.</p>
 <div class="pricing-next-step" id="book-a-session" tabindex="-1">
 <p><strong>Not sure what fits your family?</strong> We can talk through your routine, menu preferences, and how often you’d like me to cook before you book.</p>
 </div>
