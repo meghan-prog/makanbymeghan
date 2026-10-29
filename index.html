@@ -330,6 +330,8 @@ html{scroll-behavior:smooth}
 .service-photo-reels{background:linear-gradient(145deg,#EADBC7 0%,#D8C1A3 100%)}
 .service-photo-freezer{background:linear-gradient(145deg,#E5E6D9 0%,#C8D0BD 100%)}
 .service-photo-makan{background:linear-gradient(145deg,#E8D5C5 0%,#D2B09A 100%)}
+.service-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.service-photo-reels::before,.service-photo-reels::after{display:none}
 .service-photo::before,.service-photo::after{content:"";position:absolute;border:1px solid rgba(255,250,240,.54);border-radius:50%;pointer-events:none}
 .service-photo::before{width:74%;aspect-ratio:1;transform:translate(-13%,13%)}
 .service-photo::after{width:52%;aspect-ratio:1;transform:translate(36%,-30%)}
@@ -1163,8 +1165,8 @@ html{scroll-behavior:smooth}
     </header>
     <div class="services-grid">
       <article class="service-card">
-        <div class="service-photo service-photo-reels" aria-hidden="true">
-          <svg viewBox="0 0 64 64"><rect x="9" y="12" width="46" height="40" rx="3"/><path d="M27 23v18l15-9-15-9Z"/><path d="M16 7v5m11-5v5m11-5v5m11-5v5M16 52v5m11-5v5m11-5v5m11-5v5"/></svg>
+        <div class="service-photo service-photo-reels">
+          <img src="assets/reels-to-meals.jpg" alt="Collage of food reel inspiration, including pasta, chicken, salmon, salads and family meals" loading="lazy">
         </div>
         <div class="service-card-content">
           <h3>Reels to Meals</h3>
