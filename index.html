@@ -335,8 +335,6 @@ html{scroll-behavior:smooth}
 .service-photo::after{width:52%;aspect-ratio:1;transform:translate(36%,-30%)}
 .service-photo svg{position:relative;z-index:1;width:64px;height:64px;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.15}
 .service-card-content{max-width:660px;padding:4px 0;text-align:left}
-.service-card-kicker{display:flex;align-items:center;gap:10px;margin:0 0 13px;color:#8A6A35;font:700 9px/1.4 Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase}
-.service-card-kicker::before{content:"";width:25px;height:1px;background:var(--gold,#D4B06A)}
 .service-card h3{
   margin:0 0 9px;
   color:#8A6A35;
@@ -370,15 +368,13 @@ html{scroll-behavior:smooth}
   .service-card{grid-template-columns:136px minmax(0,1fr);gap:19px;padding:15px;border-radius:13px}
   .service-photo{border-radius:9px}
   .service-photo svg{width:46px;height:46px}
-  .service-card-kicker{gap:7px;font-size:8px;letter-spacing:.12em;margin-bottom:9px}
-  .service-card-kicker::before{width:15px}
   .service-card-content{text-align:left}
   .service-card h3{font-size:23px;margin-bottom:8px}
   .service-card-promise{font-size:16px;margin-bottom:9px}
   .service-card-copy{font-size:12px;line-height:1.62}
   .service-card-link{font-size:8px;gap:7px;margin-top:12px;padding:10px 11px}
 }
-@media(max-width:460px){.service-card{grid-template-columns:1fr;gap:16px}.service-photo{width:100%;max-width:280px;margin:0 auto}.service-card-content{padding:0 4px}.service-card-kicker{font-size:9px}.service-card h3{font-size:25px}.service-card-promise{font-size:17px}.service-card-copy{font-size:13px}.service-card-link{font-size:9px}}
+@media(max-width:460px){.service-card{grid-template-columns:1fr;gap:16px}.service-photo{width:100%;max-width:280px;margin:0 auto}.service-card-content{padding:0 4px}.service-card h3{font-size:25px}.service-card-promise{font-size:17px}.service-card-copy{font-size:13px}.service-card-link{font-size:9px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.service-card,.service-card-link,.service-card-link span{transition:none}.service-card:hover{transform:none}}
 
 /* How it works: light rice-cream section with line icons */
@@ -1171,7 +1167,6 @@ html{scroll-behavior:smooth}
           <svg viewBox="0 0 64 64"><rect x="9" y="12" width="46" height="40" rx="3"/><path d="M27 23v18l15-9-15-9Z"/><path d="M16 7v5m11-5v5m11-5v5m11-5v5M16 52v5m11-5v5m11-5v5m11-5v5"/></svg>
         </div>
         <div class="service-card-content">
-          <p class="service-card-kicker">INSPIRED BY YOU</p>
           <h3>Reels to Meals</h3>
           <p class="service-card-promise">Your saved food reels, freshly cooked for your family.</p>
           <p class="service-card-copy">Send me the food reels you’ve saved. Together, we’ll choose recipes that suit your family, and I’ll cook them fresh in your kitchen, ready to enjoy around the table.</p>
@@ -1183,7 +1178,6 @@ html{scroll-behavior:smooth}
           <svg viewBox="0 0 64 64"><rect x="14" y="8" width="36" height="48" rx="3"/><path d="M14 31h36m-27-16v9m18-9v9M32 37v15m-6-12 12 9m0-9-12 9m6-15-3-3m3 3 3-3"/></svg>
         </div>
         <div class="service-card-content">
-          <p class="service-card-kicker">READY WHEN YOU ARE</p>
           <h3>Freezer Fill-Up</h3>
           <p class="service-card-promise">Fill your freezer with homemade meals, ready when you need them.</p>
           <p class="service-card-copy">Choose five family-friendly recipes. I’ll prepare them in your kitchen and portion them into <strong>20 tuppers, 40 portions in total</strong>. Freeze them for busy days, easy dinners and lunchboxes.</p>
@@ -1195,7 +1189,6 @@ html{scroll-behavior:smooth}
           <svg viewBox="0 0 64 64"><path d="M12 35h40c-2 12-9 18-20 18s-18-6-20-18Z"/><path d="M8 32h48M19 25c0-3 3-4 3-7m9 7c0-3 3-4 3-7m9 7c0-3 3-4 3-7M20 56h24"/></svg>
         </div>
         <div class="service-card-content">
-          <p class="service-card-kicker">A TASTE OF HOME</p>
           <h3>Makan Menu: A Taste of Indonesia</h3>
           <p class="service-card-promise">Indonesian family favourites, made with love and ready for your freezer.</p>
           <p class="service-card-copy">Choose five dishes from a menu inspired by my Indonesian heritage. I’ll cook them in your kitchen and portion them into <strong>20 tuppers, 40 portions in total</strong>.</p>
