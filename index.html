@@ -369,16 +369,16 @@ html{scroll-behavior:smooth}
   .services-title{font-size:clamp(37px,10vw,47px)}
   .services-intro{font-size:14px;line-height:1.7}
   .services-grid{gap:14px}
-  .service-card{grid-template-columns:136px minmax(0,1fr);gap:19px;padding:15px;border-radius:13px}
-  .service-photo{border-radius:9px}
-  .service-photo svg{width:46px;height:46px}
-  .service-card-content{text-align:left}
-  .service-card h3{font-size:23px;margin-bottom:8px}
-  .service-card-promise{font-size:16px;margin-bottom:9px}
-  .service-card-copy{font-size:12px;line-height:1.62}
-  .service-card-link{font-size:8px;gap:7px;margin-top:12px;padding:10px 11px}
+  .service-card{grid-template-columns:clamp(86px,27vw,112px) minmax(0,1fr);gap:14px;padding:14px;border-radius:13px}
+  .service-photo{width:100%;max-width:none;margin:0;border-radius:9px;align-self:start}
+  .service-photo svg{width:42px;height:42px}
+  .service-card-content{min-width:0;padding:0;text-align:left}
+  .service-card h3{font-size:22px;margin-bottom:7px}
+  .service-card-promise{font-size:15px;line-height:1.5;margin-bottom:8px}
+  .service-card-copy{font-size:14px;line-height:1.65}
+  .service-card-link{font-size:8.5px;gap:7px;margin-top:11px;padding:10px 10px}
 }
-@media(max-width:460px){.service-card{grid-template-columns:1fr;gap:16px}.service-photo{width:100%;max-width:280px;margin:0 auto}.service-card-content{padding:0 4px}.service-card h3{font-size:25px}.service-card-promise{font-size:17px}.service-card-copy{font-size:13px}.service-card-link{font-size:9px}}
+@media(max-width:360px){.service-card{grid-template-columns:80px minmax(0,1fr);gap:11px;padding:11px}.service-card h3{font-size:20px}.service-card-promise{font-size:14px}.service-card-copy{font-size:13px;line-height:1.6}.service-card-link{font-size:8px;gap:5px;padding:9px 8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.service-card,.service-card-link,.service-card-link span{transition:none}.service-card:hover{transform:none}}
 
 /* How it works: light rice-cream section with line icons */
