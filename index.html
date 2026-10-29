@@ -171,7 +171,8 @@ h1.hero-headline{
   transition:background .2s ease,color .2s ease,transform .2s ease;
 }
 .intro-button-primary{min-width:420px;background:var(--gold);color:var(--green-deep)}
-.intro-button-primary span{font-size:1.5rem;line-height:0;font-weight:400}
+.arrow-icon{display:block;width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.intro-button-primary .arrow-icon{width:15px;height:15px}
 .intro-button-secondary{min-width:300px;background:transparent;color:var(--cream)}
 .intro-button:hover{transform:translateY(-2px)}
 .intro-button-primary:hover{background:#E2C47F;border-color:#E2C47F}
@@ -240,11 +241,7 @@ h1.hero-headline{
   background:var(--gold);
   color:var(--green-deep);
 }
-.intro-button-primary span{
-  font-size:17px;
-  line-height:0;
-  font-weight:400;
-}
+.intro-button-primary .arrow-icon{width:15px;height:15px}
 .intro-button-secondary{
   min-width:170px;
   background:transparent;
@@ -358,9 +355,9 @@ html{scroll-behavior:smooth}
 }
 .service-card-copy strong{color:var(--services-ink);font-weight:750}
 .service-card-link{display:inline-flex;align-items:center;justify-content:center;gap:14px;margin:17px 0 0;padding:12px 16px;border:1px solid var(--green-deep);border-radius:2px;background:var(--green-deep);color:var(--cream);font:700 9px/1.3 Arial,sans-serif;letter-spacing:.13em;text-decoration:none;text-transform:uppercase;transition:color .2s ease,background .2s ease,border-color .2s ease}
-.service-card-link span{font-size:15px;font-weight:400;transition:transform .2s ease}
+.service-card-link .arrow-icon{width:13px;height:13px;transition:transform .2s ease}
 .service-card-link:hover{color:var(--green-deep);background:var(--gold);border-color:var(--gold)}
-.service-card-link:hover span{transform:translate(2px,-2px)}
+.service-card-link:hover .arrow-icon{transform:translate(2px,-2px)}
 .service-card-link:focus-visible{outline:2px solid var(--services-ink);outline-offset:5px}
 @media(max-width:650px){
   .services-section{padding:58px 18px 62px}
@@ -379,7 +376,7 @@ html{scroll-behavior:smooth}
   .service-card-link{font-size:8.5px;gap:7px;margin-top:11px;padding:10px 10px}
 }
 @media(max-width:360px){.service-card{grid-template-columns:80px minmax(0,1fr);gap:11px;padding:11px}.service-card h3{font-size:20px}.service-card-promise{font-size:14px}.service-card-copy{font-size:13px;line-height:1.6}.service-card-link{font-size:8px;gap:5px;padding:9px 8px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.service-card,.service-card-link,.service-card-link span{transition:none}.service-card:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.service-card,.service-card-link,.service-card-link .arrow-icon{transition:none}.service-card:hover{transform:none}}
 
 /* How it works: light rice-cream section with line icons */
 .how-section{
@@ -642,7 +639,7 @@ html{scroll-behavior:smooth}
   text-transform:uppercase;
   transition:background .2s ease,border-color .2s ease;
 }
-.about-button span{font-size:17px;line-height:0;font-weight:400}
+.about-button .arrow-icon{width:15px;height:15px}
 .about-button:hover{background:#E1C27C;border-color:#E1C27C}
 .about-button:focus-visible{outline:2px solid var(--cream);outline-offset:4px}
 
@@ -998,7 +995,7 @@ html{scroll-behavior:smooth}
 .audience-card p{margin:0;color:#655D51;font:400 12.5px/1.8 Arial,"Helvetica Neue",sans-serif;text-wrap:pretty}
 .audience-actions{display:flex;justify-content:center;margin-top:33px}
 .audience-cta{display:inline-flex;align-items:center;justify-content:center;gap:19px;min-height:51px;padding:15px 23px;background:var(--green-deep);border:1px solid var(--green-deep);color:var(--cream);text-decoration:none;font:700 10px/1.3 Arial,"Helvetica Neue",sans-serif;letter-spacing:.12em;text-transform:uppercase;transition:background .18s ease,color .18s ease,border-color .18s ease}
-.audience-cta span{font-size:17px;line-height:0;font-weight:400;color:var(--gold)}
+.audience-cta .arrow-icon{width:14px;height:14px;color:var(--gold)}
 .audience-cta:hover{background:#174638;border-color:#174638}
 .audience-cta:focus-visible{outline:2px solid #B7522B;outline-offset:4px}
 @media(hover:hover) and (pointer:fine){.audience-card:hover{transform:translateY(-4px);border-color:rgba(167,112,55,.4);box-shadow:0 15px 32px rgba(15,47,36,.08)}.audience-card:hover:before{transform:scaleX(1)}}
@@ -1039,6 +1036,8 @@ html{scroll-behavior:smooth}
 .makan-footer-connect a{display:flex;align-items:center;gap:10px}
 .makan-footer-connect svg{width:18px;height:18px;flex:none;stroke:#D4B06A;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .makan-footer-bottom{border-top:1px solid rgba(199,166,106,.5);margin-top:46px;padding-top:18px;display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:11px;color:rgba(243,233,215,.8)}
+.makan-back-to-top{display:inline-flex;align-items:center;gap:6px}
+.makan-back-to-top .arrow-icon{width:12px;height:12px}
 @media(max-width:700px){.makan-footer-top{grid-template-columns:1fr 1fr;gap:32px 20px}.makan-footer-brand-col{grid-column:1/-1}.makan-footer-bottom{margin-top:32px;align-items:flex-start;flex-direction:column}}
 
 </style></head>
@@ -1086,7 +1085,7 @@ html{scroll-behavior:smooth}
       From family meals and lunchboxes to breakfast and snacks, I cook in your own kitchen so you can spend less time planning food and more time enjoying life.
     </p>
 <div class="intro-actions">
-<a class="intro-button intro-button-primary" href="#services">Explore Services <span aria-hidden="true">↗</span></a>
+<a class="intro-button intro-button-primary" href="#services">Explore Services <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></a>
 <a class="intro-button intro-button-secondary" href="https://wa.me/34648438342" target="_blank" rel="noopener noreferrer">Book a session</a>
 </div>
 </div>
@@ -1106,7 +1105,7 @@ html{scroll-behavior:smooth}
           <h3>Reels to Meals</h3>
           <p class="service-card-promise">Your saved food reels, freshly cooked for your family.</p>
           <p class="service-card-copy">Send me the food reels you’ve saved. Together, we’ll choose recipes that suit your family, and I’ll cook them fresh in your kitchen, ready to enjoy around the table.</p>
-          <a class="service-card-link" href="https://wa.me/34648438342" target="_blank" rel="noopener noreferrer">Discuss Reels to Meals <span aria-hidden="true">↗</span></a>
+          <a class="service-card-link" href="https://wa.me/34648438342" target="_blank" rel="noopener noreferrer">Discuss Reels to Meals <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></a>
         </div>
       </article>
       <article class="service-card">
@@ -1117,7 +1116,7 @@ html{scroll-behavior:smooth}
           <h3>Freezer Fill-Up</h3>
           <p class="service-card-promise">Fill your freezer with homemade meals, ready when you need them.</p>
           <p class="service-card-copy">Choose five family-friendly recipes. I’ll prepare them in your kitchen and portion them into <strong>10 storage bags, 40 portions in total</strong>. Freeze them for busy days, easy dinners and lunchboxes.</p>
-          <a class="service-card-link" href="Makan%20menu%20okt%202026.pdf" target="_blank" rel="noopener noreferrer" aria-label="View the menu for Freezer Fill-Up">View the menu <span aria-hidden="true">↗</span></a>
+          <a class="service-card-link" href="Makan%20menu%20okt%202026.pdf" target="_blank" rel="noopener noreferrer" aria-label="View the menu for Freezer Fill-Up">View the menu <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></a>
         </div>
       </article>
       <article class="service-card">
@@ -1128,7 +1127,7 @@ html{scroll-behavior:smooth}
           <h3>Makan Menu: A Taste of Indonesia</h3>
           <p class="service-card-promise">Indonesian family favourites, made with love and ready for your freezer.</p>
           <p class="service-card-copy">Choose five dishes from a menu inspired by my Indonesian heritage. I’ll cook them in your kitchen and portion them into <strong>20 tuppers, 40 portions in total</strong>.</p>
-          <a class="service-card-link" href="Makan%20menu%20okt%202026.pdf" target="_blank" rel="noopener noreferrer" aria-label="View the menu for Makan Menu">View the menu <span aria-hidden="true">↗</span></a>
+          <a class="service-card-link" href="Makan%20menu%20okt%202026.pdf" target="_blank" rel="noopener noreferrer" aria-label="View the menu for Makan Menu">View the menu <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></a>
         </div>
       </article>
     </div>
@@ -1145,7 +1144,7 @@ html{scroll-behavior:smooth}
 <p class="about-text">Life took me into the world of tech, where I spent over 10 years building successful businesses. But becoming a mother changed my perspective. I asked myself: <span class="about-question">How can I teach my daughters to follow their hearts if I’m not following mine?</span> And so, I found my way back to the kitchen.</p>
 <p class="about-text">I’m half Dutch, half Indonesian, and <em>Makan</em> means “to eat” in Indonesian. With Makan by Meghan, I bring my love for food and my heritage into the homes of expat families, making everyday meals easier with nourishing, homemade food and a taste of home.</p>
 <div class="about-actions">
-<a class="about-button" href="#services">Explore services <span aria-hidden="true">↗</span></a>
+<a class="about-button" href="#services">Explore services <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></a>
 </div>
 </div>
 <div aria-label="Meghan today and a childhood memory cooking with her grandmother" class="about-photo-wrap">
@@ -1323,7 +1322,7 @@ html{scroll-behavior:smooth}
 </article>
 </div>
 <div class="audience-actions">
-<a class="audience-cta" href="#book-a-session">Let’s make mealtimes easier <span aria-hidden="true">↗</span></a>
+<a class="audience-cta" href="#book-a-session">Let’s make mealtimes easier <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></a>
 </div>
 </div>
 </section>
@@ -1461,7 +1460,7 @@ new ResizeObserver(()=>requestAnimationFrame(fillTrack)).observe(track.parentEle
       </div>
     </div>
   </div>
-  <div class="makan-footer-bottom"><span>© 2026 Makan by Meghan. All rights reserved.</span><a href="#top">Back to top ↑</a></div>
+  <div class="makan-footer-bottom"><span>© 2026 Makan by Meghan. All rights reserved.</span><a class="makan-back-to-top" href="#top">Back to top <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m-7 7 7-7 7 7"/></svg></a></div>
 </footer>
 
 </body></html>
